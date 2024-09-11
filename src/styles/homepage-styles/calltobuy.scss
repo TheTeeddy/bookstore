@@ -1,0 +1,17 @@
+.cta-buy {
+    margin-bottom: 15px;
+    
+    .cta-header {
+        letter-spacing: 2px;
+    }
+    
+    .cta-img {
+
+        img {
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+
+}

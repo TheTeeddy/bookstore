@@ -1,0 +1,60 @@
+$text-color: #2C2C2C;
+$pink-color: #FF6C6B;
+
+
+.footer {
+
+    [class$='-header'] {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    input[type=text] {
+        border-radius: 7px;
+        border-width: 1px;
+    }
+
+    .footer-sitemap {
+        a {
+            text-decoration: none;
+            color: $text-color;
+        }
+        
+        .site-map, .help-map, .info-map {
+            display: flex;
+            flex-flow: column;
+
+            div {
+                margin-block: 11px;
+            }
+        }
+    }
+
+    .footer-cta-agreement, .footer-cta-text {
+        font-size: 12px;
+    }
+
+    .footer-underline {
+        border: 3px solid $pink-color;
+    }
+
+    .underline-map {
+
+        font-size: 11px;
+
+        div {
+            display: inline-block;
+        }
+
+        .privacy, .terms, .cookies {
+            margin-left: 22px;
+            text-underline-offset: 2px;
+            a {
+                color: #2c2c2c;
+            }
+        }
+
+    }
+
+}

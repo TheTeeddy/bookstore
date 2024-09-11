@@ -1,0 +1,46 @@
+
+
+.features {
+
+            .features-paragraph {
+                margin-inline: 15%;
+                padding-inline: 5%;
+            }
+    
+
+    .features-card {
+
+            .card {
+
+                background: inherit ;
+                border: none;
+                
+                .card-img-top {
+                    border-radius: 8px;
+                    width: 100%;
+                    aspect-ratio: 16/10;
+                    object-fit: cover;
+                }
+
+                .card-body {
+
+                    .card-title {
+                        height: 100px;
+                        display: flex;
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                        align-items: center;
+                    }
+
+                    .card-text {
+                        font-size: 14px;
+                    }
+
+                }
+
+            
+        }
+    }
+
+
+}

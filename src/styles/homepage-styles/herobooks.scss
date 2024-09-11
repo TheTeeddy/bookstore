@@ -1,0 +1,45 @@
+$text-color: #2C2C2C;
+$pink-color: #FF6C6B;
+
+
+.carousel {
+    
+    background: transparent;
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        filter: drop-shadow(0 0 5px $pink-color);
+      }  
+
+    .carousel-item {
+        img {
+            aspect-ratio: 16/9;
+        }
+
+        .carousel-caption  {
+            text-align: left;
+            top: 15%;
+            color: $text-color;
+            text-shadow: 2px 5px 10px #ffffff;
+            left: 10%;
+
+            h2 {
+                font-size: 49px;
+                font-weight: bold;
+
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 500;
+                backdrop-filter: blur(5px);
+                
+            }
+
+            .btn {
+                font-size: 30px;
+                margin-top: 1rem;
+            }
+
+        }
+    }
+}

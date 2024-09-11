@@ -1,0 +1,44 @@
+
+
+
+.hero-body {
+
+
+            .hero-header {
+                font-size: 49px;
+                font-weight: 900;
+                line-height: 55px;
+                letter-spacing: 1px;
+            }
+
+            .hero-paragraph {
+                font-size: 17px;
+                font-weight: 500;
+            }
+
+            
+            .hero-header, .hero-paragraph, .custom-btn {
+                margin-left: 20%;
+                padding-right: 7%;
+            }
+
+            .custom-btn {
+                padding: 6px 18px;
+                font-size: 22px;
+            }
+
+            .hero-img {
+                margin-left: auto;
+                margin-right: 20%;
+
+                img {
+                    aspect-ratio: 4/3;
+                    object-fit: cover;
+                    border-radius: 16px
+
+                }
+            }
+
+}
+
+

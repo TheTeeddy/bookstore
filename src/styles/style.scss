@@ -1,0 +1,139 @@
+$text-color: #2C2C2C;
+$pink-color: #FF6C6B;
+$bg-mainColor: #ffffff;
+
+#root {
+    background-color: $bg-mainColor;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    background-color: inherit;
+}
+
+.container {
+    max-width: 1440px;
+    margin-top: 50px;
+    padding: 0;    
+
+    .row {
+        margin-inline: 10%;
+    }
+
+    .row>* {
+        padding: 0;
+    }
+}
+
+.custom-btn:not(.clear-btn) {
+    background-color: $pink-color;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: hsl(0, 100%, 65%) !important
+
+    }
+}
+
+.clear-btn {
+    background: transparent;
+    color: $text-color;
+    font-weight: bold;
+
+    &:hover {
+        background: transparent;
+    }
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
+
+.features, .subscribe, .cta-buy {
+    background-color: #FFF0E4; 
+}
+
+
+.nav-bar {
+    top: 0;
+    padding: 12px 25px 12px 0;
+    border-bottom: 5px solid $pink-color;
+    background-color: $bg-mainColor;
+
+      
+
+     .home, .best-sellers , .categories {
+
+
+        &::after {
+            display:block;
+            content: '';
+            border-bottom: solid 3px $pink-color;  
+            transform: scaleX(0);  
+            transition: transform .35s ease-in-out;
+          }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+    }    
+     .search {
+        margin-left: auto;
+        input[type="text"] {
+        padding-left: 30px;
+        padding-block: 5px;
+        text-decoration: none;
+        width: 200px;
+        border: 1px solid $text-color;
+        border-radius: 8px;
+        background-image: url('/src/assets/images/icons/search.svg');
+        background-repeat: no-repeat;
+        background-position: 5px;
+        background-color: #FFF0E4;
+
+        &:focus {outline: none; }
+        }
+     }
+     .cart {
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
+        svg {
+            fill: $text-color;
+            background-color: transparent;
+            transition: fill 0.25s ease-in-out;
+
+        }
+
+        &:hover {
+            background-color: $pink-color;
+            svg {
+                fill: #ffffff;
+            }
+
+        }
+
+        
+     }
+
+     .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        width: auto;
+        cursor: pointer;
+     }
+
+        
+     
+    
+    }
+
+

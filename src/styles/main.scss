@@ -1,0 +1,13 @@
+$primary: green;
+
+@import '../../node_modules/bootstrap/scss/_functions';
+@import '../../node_modules/bootstrap/scss/_variables';
+
+$custom-theme-colors: (
+    "altprimary": red
+);
+
+$theme-colors: map-merge($map1: $custom-theme-colors, $map2: $theme-colors);
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
